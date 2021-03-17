@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/scroll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:id="@+id/message"
+            android:padding="20dp"
+            android:textSize="20sp"/>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Code"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/scroll"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/scroll"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
